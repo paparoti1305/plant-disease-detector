@@ -27,177 +27,177 @@ with open('model/class_indices_moi.json', 'r') as f:
 # Dictionary đầy đủ thông tin về tất cả các loại bệnh
 disease_info = {
     "Apple___Apple_scab": {
-        "name": "Bệnh đốm vảy táo (Apple Scab)", 
-        "description": "Bệnh đốm vảy trên táo do nấm Venturia inaequalis gây ra, xuất hiện các đốm nâu/xám trên lá và quả, làm giảm năng suất và chất lượng quả. Đây là một trong những bệnh phổ biến nhất trên cây táo.",
+        "name": "Apple Scab", 
+        "description": "Bệnh Apple Scab (đốm vảy) trên táo do nấm Venturia inaequalis gây ra, xuất hiện các đốm nâu/xám trên lá và quả, làm giảm năng suất và chất lượng quả. Đây là một trong những bệnh phổ biến nhất trên cây táo.",
         "treatment": "Cắt bỏ lá bệnh, phun thuốc gốc đồng hoặc thuốc chứa mancozeb, vệ sinh vườn cây. Tỉa cành để tăng thông thoáng. Sử dụng giống kháng bệnh."
     },
     "Apple___Cedar_apple_rust": {
-        "name": "Bệnh rỉ sắt táo cedar (Apple Cedar Rust)",
-        "description": "Bệnh rỉ sắt táo cedar do nấm Gymnosporangium juniperi-virginianae gây ra, tạo đốm vàng cam trên lá táo. Bệnh này cần hai loại cây chủ để hoàn thành chu trình sống.",
+        "name": "Apple Cedar Rust",
+        "description": "Bệnh Apple Cedar Rust (rỉ sắt táo cedar) do nấm Gymnosporangium juniperi-virginianae gây ra, tạo đốm vàng cam trên lá táo. Bệnh này cần hai loại cây chủ để hoàn thành chu trình sống.",
         "treatment": "Loại bỏ cây bách xanh hoặc tuyết tùng gần vườn táo, phun thuốc diệt nấm, thu gom và tiêu hủy lá bệnh. Sử dụng giống táo kháng bệnh."
     },
     "Apple___healthy": {
-        "name": "Lá táo khỏe mạnh",
+        "name": "Healthy Apple",
         "description": "Lá táo khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh tươi, không có đốm, vết loét hay biến màu bất thường.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước đầy đủ, bón phân theo lịch, theo dõi sự phát triển của cây và kiểm tra định kỳ để phát hiện sớm các dấu hiệu bệnh."
     },
     "Blueberry___healthy": {
-        "name": "Lá việt quất khỏe mạnh",
+        "name": "Healthy Blueberry",
         "description": "Lá việt quất khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh bình thường, không có đốm hay biến đổi bất thường.",
         "treatment": "Tiếp tục chăm sóc thông thường: duy trì độ pH đất thích hợp (4.5-5.5), tưới nước đầy đủ, bón phân axit và theo dõi sự phát triển của cây."
     },
     "Cherry_(including_sour)___healthy": {
-        "name": "Lá anh đào khỏe mạnh",
+        "name": "Healthy Cherry",
         "description": "Lá anh đào (bao gồm anh đào chua) khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh tươi, hình dạng bình thường.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước đều đặn, bón phân cân bằng, tỉa cành định kỳ và kiểm tra sức khỏe cây thường xuyên."
     },
     "Corn_(maize)___Common_rust_": {
-        "name": "Bệnh rỉ sắt ngô thường (Corn Common Rust)",
-        "description": "Bệnh rỉ sắt ngô phổ biến do nấm Puccinia sorghi gây ra, tạo ra các đốm gỉ sắt màu nâu đỏ trên lá ngô. Bệnh phát triển mạnh trong điều kiện ẩm ướt.",
+        "name": "Corn Common Rust",
+        "description": "Bệnh Corn Common Rust (rỉ sắt ngô) phổ biến do nấm Puccinia sorghi gây ra, tạo ra các đốm gỉ sắt màu nâu đỏ trên lá ngô. Bệnh phát triển mạnh trong điều kiện ẩm ướt.",
         "treatment": "Sử dụng giống kháng bệnh, phun thuốc diệt nấm khi cần thiết, luân canh cây trồng. Cải thiện thoát nước và tăng khoảng cách giữa các cây."
     },
     "Corn_(maize)___Northern_Leaf_Blight": {
-        "name": "Bệnh đốm lá phía bắc ngô (Northern Leaf Blight)",
-        "description": "Bệnh đốm lá phía bắc trên ngô do nấm Exserohilum turcicum gây ra, tạo ra các vết đốm hình thoi màu xám hoặc nâu trên lá. Có thể làm giảm năng suất đáng kể.",
+        "name": "Corn Northern Leaf Blight",
+        "description": "Bệnh Corn Northern Leaf Blight (đốm lá phía bắc) trên ngô do nấm Exserohilum turcicum gây ra, tạo ra các vết đốm hình thoi màu xám hoặc nâu trên lá. Có thể làm giảm năng suất đáng kể.",
         "treatment": "Sử dụng giống kháng bệnh, phun thuốc diệt nấm, luân canh cây trồng, cày vùi tàn dư thực vật. Tránh tưới nước lên lá."
     },
     "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
-        "name": "Bệnh đốm xám lá ngô (Gray Leaf Spot)",
-        "description": "Bệnh đốm xám lá ngô do nấm Cercospora zeae-maydis gây ra, tạo ra các vết đốm hình chữ nhật màu xám hoặc nâu với viền rõ ràng. Phổ biến ở vùng khí hậu ẩm.",
+        "name": "Corn Gray Leaf Spot",
+        "description": "Bệnh Corn Gray Leaf Spot (đốm xám lá ngô) do nấm Cercospora zeae-maydis gây ra, tạo ra các vết đốm hình chữ nhật màu xám hoặc nâu với viền rõ ràng. Phổ biến ở vùng khí hậu ẩm.",
         "treatment": "Luân canh cây trồng, sử dụng giống kháng bệnh, phun thuốc diệt nấm khi cần thiết, cải thiện thoát nước và tránh trồng quá dày."
     },
     "Grape___Black_rot": {
-        "name": "Bệnh thối đen nho (Grape Black Rot)",
-        "description": "Bệnh thối đen nho do nấm Guignardia bidwellii gây ra, tạo ra các đốm tròn trên lá và quả rồi lan rộng. Quả bị nhiễm sẽ héo khô và chuyển màu đen.",
+        "name": "Grape Black Rot",
+        "description": "Bệnh Grape Black Rot do nấm Guignardia bidwellii gây ra, tạo ra các đốm tròn trên lá và quả rồi lan rộng. Quả bị nhiễm sẽ héo khô và chuyển màu đen.",
         "treatment": "Loại bỏ và tiêu hủy các phần bị nhiễm bệnh, phun thuốc diệt nấm, cắt tỉa để cải thiện lưu thông không khí. Vệ sinh vườn sau thu hoạch."
     },
     "Grape___Esca_(Black_Measles)": {
-        "name": "Bệnh Esca nho (Black Measles)",
+        "name": "Grape Esca (Black Measles)",
         "description": "Bệnh Esca do phức hợp nấm gây ra, tạo ra các đốm không đều trên lá nho, có thể dẫn đến héo cây. Là bệnh khó điều trị ở nho.",
         "treatment": "Cắt bỏ các cành bị nhiễm, sử dụng thuốc diệt nấm hệ thống, cải thiện dinh dưỡng cho cây. Tránh làm tổn thương thân cây."
     },
     "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
-        "name": "Bệnh cháy lá nho (Isariopsis Leaf Spot)",
-        "description": "Bệnh cháy lá nho do nấm Isariopsis clavispora gây ra, tạo ra các đốm nâu trên lá, có thể lan rộng và làm lá khô cháy.",
+        "name": "Grape Leaf Blight (Isariopsis Leaf Spot)",
+        "description": "Bệnh Grape Leaf Blight (Isariopsis Leaf Spot) do nấm Isariopsis clavispora gây ra, tạo ra các đốm nâu trên lá, có thể lan rộng và làm lá khô cháy.",
         "treatment": "Phun thuốc diệt nấm chứa copper, cải thiện lưu thông không khí, tránh tưới nước lên lá. Thu gom và tiêu hủy lá bệnh."
     },
     "Grape___healthy": {
-        "name": "Lá nho khỏe mạnh",
+        "name": "Healthy Grape",
         "description": "Lá nho khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh đặc trưng, hình dạng bình thường và không có đốm hay vết loét.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước hợp lý, bón phân cân bằng, tỉa cành để thông thoáng và kiểm tra sức khỏe cây định kỳ."
     },
     "Orange___Haunglongbing_(Citrus_greening)": {
-        "name": "Bệnh vàng lá cam (Citrus Greening)",
+        "name": "Orange Huanglongbing (Citrus Greening)",
         "description": "Bệnh vàng lá cam (HLB) do vi khuẩn Candidatus Liberibacter gây ra, được truyền qua rệp muỗi. Là bệnh rất nguy hiểm với cây có múi.",
         "treatment": "Kiểm soát rệp muỗi vector, loại bỏ cây bệnh, sử dụng cây giống sạch bệnh. Hiện chưa có thuốc điều trị hiệu quả."
     },
     "Peach___Bacterial_spot": {
-        "name": "Bệnh đốm vi khuẩn đào (Peach Bacterial Spot)",
-        "description": "Bệnh đốm vi khuẩn đào do vi khuẩn Xanthomonas arboricola gây ra, tạo ra các đốm nhỏ trên lá và quả đào, có thể làm quả nứt và biến dạng.",
+        "name": "Peach Bacterial Spot",
+        "description": "Bệnh đốm vi khuẩn ở đào do vi khuẩn Xanthomonas arboricola gây ra, tạo ra các đốm nhỏ trên lá và quả đào, có thể làm quả nứt và biến dạng.",
         "treatment": "Phun thuốc kháng khuẩn gốc đồng, tỉa cành để tăng thông thoáng, tránh tưới nước lên lá. Sử dụng giống kháng bệnh."
     },
     "Peach___healthy": {
-        "name": "Lá đào khỏe mạnh",
+        "name": "Healthy Peach",
         "description": "Lá đào khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh tươi, hình dạng bình thường và không có đốm hay vết loét.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước đầy đủ, bón phân theo nhu cầu, tỉa cành hợp lý và theo dõi sức khỏe cây thường xuyên."
     },
     "Pepper,_bell___Bacterial_spot": {
-        "name": "Bệnh đốm vi khuẩn ớt chuông (Bell Pepper Bacterial Spot)",
-        "description": "Bệnh đốm vi khuẩn ớt chuông do vi khuẩn Xanthomonas campestris gây ra, tạo ra các đốm tròn nhỏ màu nâu trên lá và quả, có viền vàng xung quanh.",
+        "name": "Bell Pepper Bacterial Spot",
+        "description": "Bệnh đốm vi khuẩn ở ớt chuông do vi khuẩn Xanthomonas campestris gây ra, tạo ra các đốm tròn nhỏ màu nâu trên lá và quả, có viền vàng xung quanh.",
         "treatment": "Sử dụng hạt giống không nhiễm bệnh, tưới nước ở gốc, luân canh cây trồng, phun thuốc kháng khuẩn gốc đồng. Tránh làm việc khi lá ướt."
     },
     "Pepper,_bell___healthy": {
-        "name": "Lá ớt chuông khỏe mạnh",
+        "name": "Healthy Bell Pepper",
         "description": "Lá ớt chuông khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh đậm, bóng và không có đốm hay biến màu bất thường.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước đều đặn ở gốc, bón phân cân bằng, đảm bảo ánh sáng đầy đủ và kiểm tra sức khỏe cây định kỳ."
     },
     "Potato___Early_blight": {
-        "name": "Bệnh mốc sớm khoai tây (Potato Early Blight)",
-        "description": "Bệnh mốc sớm khoai tây do nấm Alternaria solani gây ra, tạo ra các vết đốm nâu với các vòng đồng tâm trên lá già trước, sau đó lan sang lá non.",
+        "name": "Potato Early Blight",
+        "description": "Bệnh Early Blight ở khoai tây do nấm Alternaria solani gây ra, tạo ra các vết đốm nâu với các vòng đồng tâm trên lá già trước, sau đó lan sang lá non.",
         "treatment": "Luân canh cây trồng, tưới nước đầy đủ ở gốc, phun thuốc diệt nấm khi cần thiết, giữ khoảng cách hợp lý giữa các cây để tăng thông thoáng."
     },
     "Potato___Late_blight": {
-        "name": "Bệnh mốc muộn khoai tây (Potato Late Blight)",
-        "description": "Bệnh mốc muộn khoai tây do nấm Phytophthora infestans gây ra, tạo ra các vết đốm nâu không đều trên lá và thân. Đây là bệnh rất nguy hiểm có thể phá hủy toàn bộ vườn khoai tây.",
+        "name": "Potato Late Blight",
+        "description": "Bệnh Late Blight ở khoai tây do nấm Phytophthora infestans gây ra, tạo ra các vết đốm nâu không đều trên lá và thân. Đây là bệnh rất nguy hiểm có thể phá hủy toàn bộ vườn khoai tây.",
         "treatment": "Phun thuốc diệt nấm phòng ngừa, tránh tưới nước quá nhiều, loại bỏ và tiêu hủy cây bệnh, tăng khoảng cách giữa các cây. Sử dụng giống kháng bệnh."
     },
     "Potato___healthy": {
-        "name": "Lá khoai tây khỏe mạnh",
+        "name": "Healthy Potato",
         "description": "Lá khoai tây khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh tươi, hình dạng bình thường và không có đốm hay vết loét.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước hợp lý, bón phân đầy đủ, vun gốc định kỳ và kiểm tra sức khỏe cây thường xuyên."
     },
     "Raspberry___healthy": {
-        "name": "Lá mâm xôi khỏe mạnh",
+        "name": "Healthy Raspberry",
         "description": "Lá mâm xôi khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh đặc trưng, hình dạng răng cưa bình thường.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước đều đặn, bón phân hữu cơ, tỉa cành già và theo dõi sự phát triển của cây."
     },
     "Soybean___healthy": {
-        "name": "Lá đậu nành khỏe mạnh",
+        "name": "Healthy Soybean",
         "description": "Lá đậu nành khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh tươi, hình dạng ba lá đặc trưng và không có đốm hay biến màu.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước phù hợp, bón phân cân bằng, kiểm soát cỏ dại và theo dõi sự phát triển của cây."
     },
     "Squash___Powdery_mildew": {
-        "name": "Bệnh phấn trắng bí ngô (Squash Powdery Mildew)",
-        "description": "Bệnh phấn trắng bí ngô do nhiều loại nấm khác nhau gây ra, tạo ra lớp phấn trắng trên bề mặt lá, làm lá vàng và chết dần.",
+        "name": "Squash Powdery Mildew",
+        "description": "Bệnh phấn trắng ở bí ngô do nhiều loại nấm khác nhau gây ra, tạo ra lớp phấn trắng trên bề mặt lá, làm lá vàng và chết dần.",
         "treatment": "Tăng không gian giữa các cây, tưới nước ở gốc, phun dung dịch baking soda (1 muỗng cà phê/1 lít nước) hoặc thuốc diệt nấm hữu cơ. Cải thiện lưu thông không khí."
     },
     "Strawberry___Leaf_scorch": {
-        "name": "Bệnh cháy lá dâu tây (Strawberry Leaf Scorch)",
-        "description": "Bệnh cháy lá dâu tây do nấm Diplocarpon earlianum gây ra, tạo ra các đốm tím đỏ trên lá, sau đó lá chuyển màu nâu và khô cháy.",
+        "name": "Strawberry Leaf Scorch",
+        "description": "Bệnh Leaf Scorch ở dâu tây do nấm Diplocarpon earlianum gây ra, tạo ra các đốm tím đỏ trên lá, sau đó lá chuyển màu nâu và khô cháy.",
         "treatment": "Loại bỏ lá bệnh, cải thiện thoát nước, tránh tưới nước lên lá, phun thuốc diệt nấm và sử dụng giống kháng bệnh."
     },
     "Strawberry___healthy": {
-        "name": "Lá dâu tây khỏe mạnh",
+        "name": "Healthy Strawberry",
         "description": "Lá dâu tây khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh tươi, hình dạng ba lá răng cưa đặc trưng.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước đều đặn ở gốc, bón phân hữu cơ, làm cỏ và theo dõi sự phát triển của cây."
     },
     "Tomato___Bacterial_spot": {
-        "name": "Bệnh đốm vi khuẩn cà chua (Tomato Bacterial Spot)",
-        "description": "Bệnh đốm vi khuẩn cà chua do vi khuẩn Xanthomonas campestris pv. vesicatoria gây ra, tạo ra các đốm tròn nhỏ màu nâu trên lá và quả với viền vàng xung quanh.",
+        "name": "Tomato Bacterial Spot",
+        "description": "Bệnh đốm vi khuẩn ở cà chua do vi khuẩn Xanthomonas campestris pv. vesicatoria gây ra, tạo ra các đốm tròn nhỏ màu nâu trên lá và quả với viền vàng xung quanh.",
         "treatment": "Sử dụng hạt giống không nhiễm bệnh, tưới nước ở gốc, luân canh cây trồng, phun thuốc kháng khuẩn gốc đồng. Tránh làm việc khi cây ướt."
     },
     "Tomato___Early_blight": {
-        "name": "Bệnh mốc sớm cà chua (Tomato Early Blight)",
-        "description": "Bệnh mốc sớm cà chua do nấm Alternaria solani gây ra, tạo ra các vết đốm nâu với các vòng đồng tâm trên lá già, thường bắt đầu từ lá dưới cùng.",
+        "name": "Tomato Early Blight",
+        "description": "Bệnh Early Blight ở cà chua do nấm Alternaria solani gây ra, tạo ra các vết đốm nâu với các vòng đồng tâm trên lá già, thường bắt đầu từ lá dưới cùng.",
         "treatment": "Loại bỏ lá bệnh, tưới nước ở gốc, giữ khoảng cách giữa các cây, phun thuốc diệt nấm khi cần thiết. Bón phân cân bằng để tăng sức đề kháng."
     },
     "Tomato___Late_blight": {
-        "name": "Bệnh mốc muộn cà chua (Tomato Late Blight)",
-        "description": "Bệnh mốc muộn cà chua do nấm Phytophthora infestans gây ra, tạo ra các vết đốm không đều, trông ướt trên lá và thân. Có thể phá hủy cây trong vài ngày.",
+        "name": "Tomato Late Blight",
+        "description": "Bệnh Late Blight ở cà chua do nấm Phytophthora infestans gây ra, tạo ra các vết đốm không đều, trông ướt trên lá và thân. Có thể phá hủy cây trong vài ngày.",
         "treatment": "Phun thuốc diệt nấm phòng ngừa, tránh tưới nước quá nhiều, loại bỏ và tiêu hủy cây bệnh, tăng khoảng cách giữa các cây. Sử dụng giống kháng bệnh."
     },
     "Tomato___Leaf_Mold": {
-        "name": "Bệnh mốc lá cà chua (Tomato Leaf Mold)",
+        "name": "Tomato Leaf Mold",
         "description": "Bệnh mốc lá cà chua do nấm Fulvia fulva gây ra, tạo ra các đốm vàng trên mặt trên của lá và nấm mốc xám-nâu ở mặt dưới. Phổ biến trong nhà kính.",
         "treatment": "Tăng lưu thông không khí, giảm độ ẩm, loại bỏ lá bệnh, phun thuốc diệt nấm khi cần thiết. Tránh tưới nước lên lá."
     },
     "Tomato___Septoria_leaf_spot": {
-        "name": "Bệnh đốm lá Septoria cà chua (Septoria Leaf Spot)",
+        "name": "Tomato Septoria Leaf Spot",
         "description": "Bệnh đốm lá Septoria trên cà chua do nấm Septoria lycopersici gây ra, tạo ra các đốm tròn nhỏ với viền sẫm màu và tâm màu xám trắng.",
         "treatment": "Loại bỏ lá bệnh, tưới nước ở gốc, phun thuốc diệt nấm, luân canh cây trồng. Tránh làm việc khi cây ướt."
     },
     "Tomato___Spider_mites Two-spotted_spider_mite": {
-        "name": "Nhện đỏ hai chấm trên cà chua (Two-spotted Spider Mite)",
+        "name": "Tomato Spider Mites",
         "description": "Nhện đỏ hai chấm tấn công cà chua, tạo ra các đốm nhỏ vàng hoặc trắng trên lá do chúng hút chất dinh dưỡng từ tế bào lá. Lá có thể có mạng nhện mỏng.",
         "treatment": "Xịt nước áp lực mạnh lên lá, sử dụng xà phòng insecticidal, thuốc diệt côn trùng gốc dầu hoặc thuốc diệt côn trùng hữu cơ. Tăng độ ẩm xung quanh cây."
     },
     "Tomato___Target_Spot": {
-        "name": "Bệnh đốm đồng tâm cà chua (Target Spot)",
+        "name": "Tomato Target Spot",
         "description": "Bệnh đốm đồng tâm cà chua do nấm Corynespora cassiicola gây ra, tạo ra các đốm tròn với các vòng đồng tâm trên lá, thân và quả, giống như bia bắn.",
         "treatment": "Tưới nước ở gốc, giữ khoảng cách giữa các cây, loại bỏ lá bệnh, phun thuốc diệt nấm khi cần thiết. Cải thiện lưu thông không khí."
     },
     "Tomato___Tomato_mosaic_virus": {
-        "name": "Virus khảm cà chua (Tomato Mosaic Virus)",
+        "name": "Tomato Mosaic Virus",
         "description": "Bệnh virus khảm cà chua tạo ra các mảng xen kẽ màu vàng và xanh trên lá, làm biến dạng lá và giảm năng suất. Virus lây truyền qua tiếp xúc cơ học.",
         "treatment": "Không có biện pháp chữa trị; loại bỏ và tiêu hủy cây bệnh, khử trùng dụng cụ, rửa tay thường xuyên khi làm việc với cây. Sử dụng giống kháng bệnh."
     },
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
-        "name": "Virus xoăn vàng lá cà chua (TYLCV)",
+        "name": "Tomato Yellow Leaf Curl Virus",
         "description": "Bệnh virus xoăn vàng lá cà chua làm cho lá bị xoăn, nhỏ lại và có màu vàng, cây còi cọc và ít ra hoa. Virus được truyền qua rệp bọ phấn trắng.",
         "treatment": "Kiểm soát bọ phấn trắng là vector truyền bệnh, sử dụng lưới chống côn trùng, trồng giống kháng bệnh, loại bỏ cây bệnh ngay khi phát hiện."
     },
     "Tomato___healthy": {
-        "name": "Lá cà chua khỏe mạnh",
+        "name": "Healthy Tomato",
         "description": "Lá cà chua khỏe mạnh, không có dấu hiệu bệnh. Lá có màu xanh đậm đặc trưng, hình dạng răng cưa bình thường và không có đốm hay vết loét.",
         "treatment": "Tiếp tục chăm sóc thông thường: tưới nước đều đặn ở gốc, bón phân cân bằng NPK, cắt cành phụ, dựng giàn và kiểm tra sức khỏe cây thường xuyên."
     }
